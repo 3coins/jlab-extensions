@@ -15,7 +15,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
   autoStart: true,
   activate: (app: JupyterFrontEnd, a: IPrebuiltA) => {
     console.log('JupyterLab extension prebuilt-extension-b is activated!');
-    console.log(`prebuilt-a: ${a}`);
+    console.log(`prebuilt-a: ${a.propertyA}`);
   },
   requires: [
     IPrebuiltA

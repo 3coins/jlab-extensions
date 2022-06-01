@@ -83,7 +83,13 @@
   },
   "jupyterlab": { 
     "extension": true,
-    "outputDir": "prebuilt_extension_b/labextension"
+    "outputDir": "prebuilt_extension_b/labextension",
+    "sharedPackages": {
+      "prebuilt-extension-a": {
+        "bundled": false,
+        "singleton": true
+      }
+    }
   },
   "jupyter-releaser": {
     "hooks": {
